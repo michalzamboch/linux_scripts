@@ -2,12 +2,14 @@
 
 clear
 
-echo "Start update skriptu..."
+echo "Update script start..."
 sudo apt-get update
 echo ""
 
 sudo apt-get -y upgrade
 echo ""
+
+echo "Package manager clean up..."
 
 sudo apt -y autoremove
 echo ""
@@ -18,6 +20,6 @@ echo ""
 sudo apt -y autoclean
 echo ""
 
-echo "Konec update skriptu..."
+echo "Update script end..."
 sleep 2
 
