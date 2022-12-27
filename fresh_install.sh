@@ -15,7 +15,7 @@ clean ()
 update ()
 {
 	echo "Update script start..."
-	sudo apt-get update
+	sudo apt-get -y update
 	echo ""
 
 	sudo apt-get -y upgrade
