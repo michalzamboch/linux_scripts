@@ -14,7 +14,7 @@ clean ()
 
 update ()
 {
-	echo "Start update skriptu..."
+	echo "Update script start..."
 	sudo apt-get update
 	echo ""
 
@@ -23,15 +23,20 @@ update ()
 
 	clean
 
-	echo "Konec update skriptu..."
+	echo "Update script end..."
 }
 
-declare -a programy
-programy=("git"
+declare -a software
+software=("git"
 		  "neofetch"
-		  "neovim")
+		  "neovim"
+		  "python3"
+		  "pip3")
 
-#echo ${programy[*]}
+update()
+sudo apt-get install "${software[@]}" -yy
 
-len=${#programy[@]}
-echo ${len}
+
+# UNUSED -------------------------------------------------
+# Reading packages from file
+# mapfile -t software < "$packages.txt"
