@@ -1,0 +1,17 @@
+com.adrienplazas.Metronome
+com.axosoft.GitKraken
+com.github.arshubham.gitignore
+com.heroicgameslauncher.hgl
+com.jetbrains.IntelliJ-IDEA-Community
+com.mattjakeman.ExtensionManager
+com.sublimetext.three
+com.usebottles.bottles	
+com.valvesoftware.Steam
+io.github.jonmagon.kdiskmark
+io.github.peazip.PeaZip
+io.github.prateekmedia.appimagepool
+io.gitlab.librewolf-community
+net.davidotek.pupgui2
+org.gnome.Meld
+org.onlyoffice.desktopeditors
+org.videolan.VLC
