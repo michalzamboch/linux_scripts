@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo cat ./configs/aliases.txt >> ~/.bashrc
+cat ./configs/aliases.txt >> ~/.bashrc
+source ~/.bashrc
