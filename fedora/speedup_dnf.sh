@@ -1,8 +1,10 @@
 #!/bin/bash
 
-dnfConfigLocation="/etc/dnf/dnf.conf"
-confComment="# Added for speed"
+DESTINATION="/etc/dnf/dnf.conf"
+COMMENT="Added for speed"
 
-if ! grep -q $confComment "$dnfConfigLocation" then
-  sudo cat ./configs/dnf_upgrade.txt >> $dnfConfigLocation 
+if ! grep -q "$COMMENT" $DESTINATION;
+then
+  sudo cat ./configs/dnf_upgrade.txt >> $DESTINATION 
 fi
+
