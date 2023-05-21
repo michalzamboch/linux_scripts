@@ -19,10 +19,6 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 sudo dnf -y update
 sudo dnf -y install code
 
-# Fedy
-sudo dnf copr enable kwizart/fedy
-sudo dnf install fedy -y
-
 # Brave
 sudo dnf install dnf-plugins-core
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
