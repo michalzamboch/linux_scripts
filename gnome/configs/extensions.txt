@@ -5,5 +5,4 @@ dash-to-dock@micxgx.gmail.com
 just-perfection-desktop@just-perfection
 AlphabeticalAppGrid@stuarthayhurst
 instantworkspaceswitcher@amalantony.net
-burn-my-windows@schneegans.github.com
 pop-shell@system76.com
