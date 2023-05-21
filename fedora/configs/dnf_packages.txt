@@ -11,3 +11,4 @@ love
 timeshift
 bleachbit
 golang
+ufw
