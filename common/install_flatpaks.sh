@@ -1,7 +1,7 @@
 #!/bin/bash
 
 flatpak -y update
-input="./configs/packages.txt"
+input="./configs/flatpaks.txt"
 
 while IFS= read -r line
 do
