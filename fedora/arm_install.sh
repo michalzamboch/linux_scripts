@@ -3,6 +3,7 @@
 pushd .
 cd ~/Downloads/
 
-sudo arm-image-installer --image=ubuntu-22.04.2-live-server-arm64.iso --target=rpi4 --media=/dev/sdc
+sudo dnf -y install arm-image-installer
+sudo arm-image-installer --image=$1 --target=rpi4 --media=/dev/sdc
 
 popd
