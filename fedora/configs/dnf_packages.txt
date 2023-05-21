@@ -1,0 +1,13 @@
+neovim
+vlc
+steam
+neofetch
+git
+htop
+nodejs
+lua
+luarocks
+love
+timeshift
+bleachbit
+golang

@@ -1,7 +1,14 @@
 #!/bin/bash
 
+# Dnf packages
 sudo dnf -y update
-sudo dnf install neovim vlc steam neofetch git htop nodejs lua luarocks love timeshift qemu @Virtualization bleachbit
+input="./configs/dnf_packages.txt"
+
+while IFS= read -r line
+do
+  echo "$line"
+  sudo dnf -y install $line
+done < "$input"
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
