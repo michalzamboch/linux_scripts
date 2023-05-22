@@ -12,6 +12,7 @@ done < "$input"
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
 
 # VS Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
