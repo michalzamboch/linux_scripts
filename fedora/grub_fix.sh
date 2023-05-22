@@ -3,8 +3,8 @@
 sudo dnf install grub-customizer
 
 grubConfig="/etc/default/grub"
-searchString="GRUB_ENABLE_BLSCFG=\"true\""
-replaceString="GRUB_ENABLE_BLSCFG=\"false\""
+searchString="GRUB_ENABLE_BLSCFG=true"
+replaceString="GRUB_ENABLE_BLSCFG=false"
 
 finalExperssion=s/"$searchString"/"$replaceString"/
 echo $finalExperssion
