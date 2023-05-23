@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # Install Liquorix Kernel on Fedora
+# https://www.linuxcapable.com/install-liquorix-kernel-on-fedora-linux/
+# 
+# Disclamer!
+# Install on your own risk. Always backup your system before install.
 
 sudo dnf upgrade --refresh
 sudo dnf copr enable rmnscnce/kernel-lqx -y
