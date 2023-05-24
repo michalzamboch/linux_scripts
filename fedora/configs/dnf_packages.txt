@@ -13,3 +13,4 @@ bleachbit
 golang
 ufw
 arm-image-installer
+lolcat
