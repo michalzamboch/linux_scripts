@@ -1,9 +1,9 @@
 #!/bin/bash
 
-sudo mkswap /dev/sda3
-sudo swapon /dev/sda3
+sudo mkswap $1
+sudo swapon $1
 
-partitionInfo=lsblk --noheadings -o UUID /dev/sda3
+partitionInfo=lsblk --noheadings -o UUID $1
 uuid=grep -oP '(?<=<).*?(?=>)' <<< "$partitionInfo"
 
 resumeConfig="/etc/dracut.conf.d/resume.conf"
