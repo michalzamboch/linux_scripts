@@ -1,12 +1,15 @@
 #!/bin/bash
 
-zipFile=$1
+pushd .
+cd ~/Downloads/
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/DroidSansMono.zip
+
+zipFile="DroidSansMono.zip"
 destination="~/.local/share/fonts/"
 
 mkdir -p $destination 
 cp $zipFile $destination 
 
-pushd .
 cd $destination
 
 unzip $zipFile
