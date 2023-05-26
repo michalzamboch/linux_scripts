@@ -44,6 +44,9 @@ sh ./increase_vm_max_map_count.sh
 sh ./font.sh
 sh ./install_starship.sh
 
+# Firewall
+sh ./setup_firewall.sh
+
 popd
 
 # Running scripts from Gnome folder
