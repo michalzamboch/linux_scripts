@@ -26,6 +26,7 @@ sh ./create_aliases.sh
 # Driver update
 sh ./driver_update.sh
 
+
 # Running scripts from common folder
 pushd .
 cd ../common/
@@ -45,3 +46,11 @@ sh ./install_starship.sh
 
 popd
 
+# Running scripts from Gnome folder
+pushd .
+cd ../gnome/
+
+# Customize Gnome
+sh ./install_extensions.sh
+
+popd
