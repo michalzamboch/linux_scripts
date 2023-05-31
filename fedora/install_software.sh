@@ -4,11 +4,7 @@
 sudo dnf -y update
 input="./configs/dnf_packages.txt"
 
-while IFS= read -r line
-do
-  echo "$line"
-  sudo dnf -y install $line
-done < "$input"
+sudo dnf -y install $(cat $input)
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
