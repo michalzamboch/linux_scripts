@@ -3,12 +3,7 @@
 # Dnf packages
 sudo dnf -y update
 input="./configs/dnf_packages.txt"
-
 sudo dnf -y install $(cat $input)
-
-# Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env"
 
 # VS Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -23,9 +18,4 @@ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf -y install brave-browser
 
 # Astro vim
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
-
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
