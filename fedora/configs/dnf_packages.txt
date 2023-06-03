@@ -1,5 +1,4 @@
 neovim
-vlc
 steam
 neofetch
 git
