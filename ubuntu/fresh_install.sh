@@ -26,16 +26,9 @@ update ()
 	echo "Update script end..."
 }
 
-declare -a software
-software=("git"
-		  "neofetch"
-		  "neovim"
-		  "python3"
-		  "pip3")
-
 update()
-sudo apt-get install "${software[@]}" -yy
-
+sudo apt-get -y install $(cat ./configs/apt_packages.txt) 
+clean()
 
 # UNUSED -------------------------------------------------
 # Reading packages from file

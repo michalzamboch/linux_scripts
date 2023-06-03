@@ -1,0 +1,11 @@
+neovim
+neofetch
+git
+htop
+lua5.4
+bleachbit
+golang
+ufw
+gufw
+python3
+pip3
