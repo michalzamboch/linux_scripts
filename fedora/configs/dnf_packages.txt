@@ -16,3 +16,4 @@ lolcat
 dnf5
 gamemode
 vala
+fzf
