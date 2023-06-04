@@ -2,34 +2,22 @@
 
 clean ()
 {
+	echo
+	echo "Cleaning..."
 	sudo apt -y autoremove
-	echo ""
-
 	sudo apt -y clean
-	echo ""
-
 	sudo apt -y autoclean
-	echo ""
 }
 
 update ()
 {
-	echo "Update script start..."
-	sudo apt-get -y update
-	echo ""
-
-	sudo apt-get -y upgrade
-	echo ""
-
-	clean
-
-	echo "Update script end..."
+	echo
+	echo "Updating..." 
+	sudo apt -y update
+	sudo apt -y upgrade
 }
 
-update()
-sudo apt-get -y install $(cat ./configs/apt_packages.txt) 
-clean()
+update
+sudo apt -y install $(cat ./configs/apt_packages.txt) 
+clean
 
-# UNUSED -------------------------------------------------
-# Reading packages from file
-# mapfile -t software < "$packages.txt"
