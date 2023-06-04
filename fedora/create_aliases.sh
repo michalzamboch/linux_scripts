@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cat ./configs/aliases.txt >> ~/.bashrc
+cat ./configs/aliases.txt | tee -a ~/.bashrc
 source ~/.bashrc
