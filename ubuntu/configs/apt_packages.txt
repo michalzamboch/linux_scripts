@@ -3,6 +3,7 @@ neofetch
 git
 htop
 lua5.4
+luarocks
 bleachbit
 golang
 ufw
@@ -11,3 +12,4 @@ python3
 nala
 openssh-server
 net-tools
+fzf
