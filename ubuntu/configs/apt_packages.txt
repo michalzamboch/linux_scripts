@@ -9,3 +9,5 @@ ufw
 gufw
 python3
 pip3
+nala
+openssh-server
