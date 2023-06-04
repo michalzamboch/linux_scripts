@@ -13,3 +13,4 @@ nala
 openssh-server
 net-tools
 fzf
+tree
