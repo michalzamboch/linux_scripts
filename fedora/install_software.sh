@@ -2,6 +2,7 @@
 
 # Dnf packages
 sudo dnf -y update
+sudo dnf -y upgrade
 input="./configs/dnf_packages.txt"
 sudo dnf -y install $(cat $input)
 
