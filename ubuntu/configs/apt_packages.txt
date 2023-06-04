@@ -10,3 +10,4 @@ gufw
 python3
 nala
 openssh-server
+net-tools
