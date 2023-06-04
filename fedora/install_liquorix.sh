@@ -6,6 +6,8 @@
 # Disclamer!
 # Install on your own risk. Always backup your system before install.
 
+sudo dnf -y update
+
 sudo dnf upgrade --refresh
 sudo dnf copr enable rmnscnce/kernel-lqx -y
 sudo dnf install kernel-lqx

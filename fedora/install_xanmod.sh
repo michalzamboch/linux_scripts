@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo dnf -y update
+
 sudo dnf upgrade --refresh
 sudo dnf copr enable rmnscnce/kernel-xanmod -y
 
