@@ -21,5 +21,8 @@ sudo dnf -y install brave-browser
 # Astro vim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim $HOME/.config/nvim
 
+# Xmake
+curl -fsSL https://xmake.io/shget.text | bash
+
 # Clean up
 sudo dnf -y autoremove
