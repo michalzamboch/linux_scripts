@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pushd .
-cd ~/Downloads/
+cd $HOME/Downloads/
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/DroidSansMono.zip
 
 zipFile="DroidSansMono.zip"

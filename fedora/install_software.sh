@@ -19,7 +19,7 @@ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf -y install brave-browser
 
 # Astro vim
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim $HOME/.config/nvim
 
 # Clean up
 sudo dnf -y autoremove

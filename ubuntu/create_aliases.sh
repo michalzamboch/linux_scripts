@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp ./configs/.bash_aliases ~
-source ~/.bashrc
+cp ./configs/.bash_aliases $HOME
+source $HOME/.bashrc
