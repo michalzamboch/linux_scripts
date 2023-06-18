@@ -2,6 +2,7 @@ neovim
 steam
 neofetch
 git
+gparted
 htop
 nodejs
 lua
