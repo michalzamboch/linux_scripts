@@ -58,17 +58,4 @@ sh ./install_extensions.sh
 
 popd
 
-echo "======================================="
-echo "It is recommneded to reboot the system."
-echo "Do you want to reboot now? (y/n)" 
-echo "======================================="
-read rebootNow
-
-$rebootNow=echo $rebootNow | xargs
-$rebootNow="$(echo $rebootNow | head -c 1)"
-
-if [ $rebootNow -eq "y" ]
-then
-  sudo reboot
-fi
-
+sh ./install_nvidia.sh

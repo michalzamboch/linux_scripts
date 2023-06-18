@@ -24,5 +24,8 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim $HOME/.config/nvim
 # Xmake
 curl -fsSL https://xmake.io/shget.text | bash
 
+# Starship
+curl -sS https://starship.rs/install.sh | sh
+
 # Clean up
 sudo dnf -y autoremove

@@ -20,4 +20,3 @@ vala
 fzf
 moreutils
 rust
-akmod-nvidia
