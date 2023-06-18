@@ -67,7 +67,7 @@ read rebootNow
 $rebootNow=echo $rebootNow | xargs
 $rebootNow="$(echo $rebootNow | head -c 1)"
 
-if [ $rebootNow -eq y ]
+if [ $rebootNow -eq "y" ]
 then
   sudo reboot
 fi

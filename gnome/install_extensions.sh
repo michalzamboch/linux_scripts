@@ -8,3 +8,5 @@ do
   gnome-extensions install $line
 done < "$input"
 
+sudo dnf install gnome-tweaks
+
