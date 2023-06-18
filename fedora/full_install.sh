@@ -59,3 +59,6 @@ sh ./install_extensions.sh
 popd
 
 sh ./install_nvidia.sh
+
+sudo reboot
+
