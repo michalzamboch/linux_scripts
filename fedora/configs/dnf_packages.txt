@@ -20,3 +20,4 @@ vala
 fzf
 moreutils
 rust
+fish
