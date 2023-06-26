@@ -49,15 +49,6 @@ sh ./setup_firewall.sh
 
 popd
 
-# Running scripts from Gnome folder
-pushd .
-cd ../gnome/
-
-# Customize Gnome
-sh ./install_extensions.sh
-
-popd
-
 sh ./install_nvidia.sh
 
 sudo reboot
