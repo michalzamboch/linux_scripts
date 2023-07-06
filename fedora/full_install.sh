@@ -45,7 +45,7 @@ sh ./increase_vm_max_map_count.sh
 #sh ./install_starship.sh
 
 # Fish shell
-sh ../common/install_fish.sh
+#sh ../common/install_fish.sh
 
 # Firewall
 sh ./setup_firewall.sh
