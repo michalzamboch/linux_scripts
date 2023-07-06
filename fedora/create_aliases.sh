@@ -1,5 +1,4 @@
 #!/bin/bash
 
-bashrcPath="/etc/bash.bashrc"
-
-cat ./configs/aliases.txt | tee -a $bashrcPath
+cat ./configs/aliases.txt >> ~/.bashrc
+source ~/.bashrc
