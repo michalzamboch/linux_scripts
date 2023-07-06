@@ -1,3 +1,3 @@
 #!/bin/bash
 
-source ./a.sh
+bash ./a.sh
