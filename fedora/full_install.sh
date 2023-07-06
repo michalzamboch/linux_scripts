@@ -1,30 +1,29 @@
 #!/bin/bash
 
+# Do not un this script with sudo privileges
+
 # DNF and Updates
-sh ./speedup_dnf.sh
+sudo sh ./speedup_dnf.sh
 
 sudo dnf -y update
 sudo dnf -y upgrade
 
 # RPM Fusion and Codecs
-sh ./rpm_fusion.sh
-sh ./install_codecs.sh
+sudo sh ./rpm_fusion.sh
+sudo sh ./install_codecs.sh
 sudo dnf -y update
 
 # DNF packages
-sh ./install_software.sh
+sudo sh ./install_software.sh
 
 # Flatpaks
-sh ./activate_flatpaks.sh
+sudo sh ./activate_flatpaks.sh
 
 # Grub fix
-sh ./grub_fix.sh
+sudo sh ./grub_fix.sh
 
 # Aliases
 sh ./create_aliases.sh
-
-# Driver update
-sh ./driver_update.sh
 
 
 # Running scripts from common folder
@@ -35,24 +34,24 @@ cd ../common/
 sh ./install_flatpaks.sh
 
 # Time system fix
-sh ./dualboot_time_fix.sh
+sudo sh ./dualboot_time_fix.sh
 
 # Increase vm max map count
-sh ./increase_vm_max_map_count.sh
+sudo sh ./increase_vm_max_map_count.sh
 
 # Install Starship shell prompt
-#sh ./font.sh
-#sh ./install_starship.sh
+sh ./font.sh
+#sudo sh ./install_starship.sh
 
 # Fish shell
-#sh ../common/install_fish.sh
+#sudo sh ../common/install_fish.sh
 
 # Firewall
-sh ./setup_firewall.sh
+sudo sh ./setup_firewall.sh
 
 popd
 
-sh ./install_nvidia.sh
+sudo sh ./install_nvidia.sh
 
 sudo reboot
 
