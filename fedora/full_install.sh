@@ -41,8 +41,11 @@ sh ./dualboot_time_fix.sh
 sh ./increase_vm_max_map_count.sh
 
 # Install Starship shell prompt
-sh ./font.sh
-sh ./install_starship.sh
+#sh ./font.sh
+#sh ./install_starship.sh
+
+# Fish shell
+sh ../common/install_fish.sh
 
 # Firewall
 sh ./setup_firewall.sh
