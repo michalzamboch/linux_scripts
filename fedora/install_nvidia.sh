@@ -8,4 +8,4 @@ echo "Installing Nvidia drivers"
 sudo dnf -y update
 sudo dnf -y upgrade
 
-sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
+sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda
