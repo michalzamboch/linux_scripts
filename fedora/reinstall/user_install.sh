@@ -1,8 +1,12 @@
 #!/bin/bash
 
-# Aliases
-sh ../create_aliases.sh
+pushd .
+cd ..
 
+# Aliases
+sh ./create_aliases.sh
+
+popd
 
 # Running scripts from common folder
 pushd .

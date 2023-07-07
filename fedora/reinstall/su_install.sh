@@ -1,5 +1,8 @@
 #!/bin/bash
 
+pushd .
+cd ..
+
 # DNF and Updates
 sh ./speedup_dnf.sh
 
@@ -23,10 +26,14 @@ sh ./grub_fix.sh
 # Driver update
 sh ./driver_update.sh
 
+sh ./install_nvidia.sh
+
+popd
+
 
 # Running scripts from common folder
 pushd .
-cd ../common/
+cd ../../common/
 
 # Time system fix
 sh ./dualboot_time_fix.sh
@@ -38,6 +45,3 @@ sh ./increase_vm_max_map_count.sh
 sh ./setup_firewall.sh
 
 popd
-
-sh ./install_nvidia.sh
-
