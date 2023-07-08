@@ -23,9 +23,6 @@ sh ./activate_flatpaks.sh
 # Grub fix
 sh ./grub_fix.sh
 
-# Driver update
-sh ./driver_update.sh
-
 # Nvidia drivers
 sh ./install_nvidia.sh
 
