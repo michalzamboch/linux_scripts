@@ -45,7 +45,4 @@ sh ./increase_vm_max_map_count.sh
 # Firewall
 sh ./setup_firewall.sh
 
-# Starship
-sh ./install_starship.sh
-
 popd
