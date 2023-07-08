@@ -12,11 +12,11 @@ popd
 pushd .
 cd ../../common/
 
-# Install flatpak packages
-sh ./install_flatpaks.sh
-
 # Install font
 sh ./font.sh
+
+# Install flatpak packages
+sh ./install_flatpaks.sh
 
 popd
 

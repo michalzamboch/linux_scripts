@@ -26,6 +26,7 @@ sh ./grub_fix.sh
 # Driver update
 sh ./driver_update.sh
 
+# Nvidia drivers
 sh ./install_nvidia.sh
 
 popd

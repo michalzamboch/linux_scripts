@@ -21,3 +21,4 @@ fzf
 moreutils
 rust
 fish
+lshw
