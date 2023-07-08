@@ -67,5 +67,8 @@ user_install() {
   popd
 }
 
-sudo su_install
+sudo su
+su_install
+exit
+
 user_install
