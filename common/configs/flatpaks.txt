@@ -10,9 +10,7 @@ com.usebottles.bottles
 hu.kramo.Cartridges
 io.github.peazip.PeaZip
 io.github.peazip.PeaZip.Addon.i386
-md.obsidian.Obsidian
 net.davidotek.pupgui2
-org.gnome.Meld
 org.gnome.SoundRecorder
 org.gnome.TwentyFortyEight
 org.onlyoffice.desktopeditors

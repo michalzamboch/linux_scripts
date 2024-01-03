@@ -16,7 +16,6 @@ arm-image-installer
 lolcat
 dnf5
 gamemode
-vala
 fzf
 moreutils
 rust
