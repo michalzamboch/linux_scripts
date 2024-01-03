@@ -1,2 +1,3 @@
 # Linux scripts
-Scripts to automate and make easier daily use of Linux machines.
+Scripts to automate work on Linux machines.
+These scripts can be used for regular maintenance and also for automatization of fresh installs.
