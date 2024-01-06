@@ -1,4 +1,6 @@
 neovim
+bottom
+doublecmd
 steam
 neofetch
 git
@@ -13,11 +15,11 @@ bleachbit
 golang
 ufw
 arm-image-installer
+lazygit
 lolcat
 dnf5
 gamemode
 fzf
 moreutils
-rust
-fish
 lshw
+ripgrep
