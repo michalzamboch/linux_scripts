@@ -1,6 +1,7 @@
 neovim
 bottom
 doublecmd
+cargo
 steam
 neofetch
 git

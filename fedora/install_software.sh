@@ -33,8 +33,5 @@ curl -fsSL https://xmake.io/shget.text | bash
 # Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
-# Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -1
-
 # Clean up
 sudo dnf -y autoremove

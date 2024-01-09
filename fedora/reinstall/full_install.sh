@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cat ./readme.txt
+echo
+
 start_time=$SECONDS
 
 sudo sh ./su_install.sh
