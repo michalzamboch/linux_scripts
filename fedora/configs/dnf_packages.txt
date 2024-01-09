@@ -1,5 +1,4 @@
 neovim
-doublecmd
 cargo
 steam
 neofetch
