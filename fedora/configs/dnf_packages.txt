@@ -1,5 +1,4 @@
 neovim
-bottom
 doublecmd
 cargo
 steam
@@ -16,7 +15,6 @@ bleachbit
 golang
 ufw
 arm-image-installer
-lazygit
 lolcat
 dnf5
 gamemode

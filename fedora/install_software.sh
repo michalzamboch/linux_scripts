@@ -1,16 +1,10 @@
 #!/bin/bash
 
-# Update
+# Dnf packages
 sudo dnf -y update
 sudo dnf -y upgrade
-
-# Copr repositories
-copr_repos="./configs/copr_repositories.txt"
-sudo dnf copr enable -y $(cat $copr_repos)
-
-# Dnf packages
-dnf_packages="./configs/dnf_packages.txt"
-sudo dnf -y install $(cat $dnf_packages)
+input="./configs/dnf_packages.txt"
+sudo dnf -y install $(cat $input)
 
 # VS Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
