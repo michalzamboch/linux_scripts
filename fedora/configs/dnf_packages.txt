@@ -1,5 +1,4 @@
 neovim
-cargo
 steam
 neofetch
 git
@@ -20,4 +19,5 @@ gamemode
 fzf
 moreutils
 lshw
+tldr
 ripgrep

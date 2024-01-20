@@ -40,6 +40,9 @@ alias update="sudo dnf -y update && sudo dnf -y upgrade && sudo dnf -y autoremov
 alias up="sudo dnf5 -y update && sudo dnf5 -y upgrade && sudo dnf5 -y autoremove && flatpak -y update"
 alias newshell="env GNOME_SHELL_SLOWDOWN_FACTOR=2 MUTTER_DEBUG_DUMMY_MODE_SPECS=1024x768 dbus-run-session -- gnome-shell --nested"
 alias newenv=newshell
+alias lg=lazygit
+alias clean="sudo dnf5 clean all"
+alias in="sudo dnf5 install"
 
 # Docker
 export PATH=/usr/bin:$PATH
