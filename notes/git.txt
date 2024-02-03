@@ -1,0 +1,5 @@
+# Clone repo using github token
+git clone https://<tokenhere>@github.com/<user_name>/<repo_name>.git
+
+# Clone repo using github token
+git remote set-url origin https://<tokenhere>@github.com/<user_name>/<repo_name>.git
