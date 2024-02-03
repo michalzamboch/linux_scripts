@@ -2,7 +2,7 @@
 
 # Install virtualization tools
 if grep -E '(vmx|svm)' /proc/cpuinfo; then
-    sudo dnf install @virtualization
+    sudo dnf install -y @virtualization
 
     sudo systemctl start libvirtd
     sudo systemctl enable libvirtd

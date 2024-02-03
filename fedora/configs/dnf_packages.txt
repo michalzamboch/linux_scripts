@@ -21,3 +21,4 @@ moreutils
 lshw
 tldr
 ripgrep
+xmake
