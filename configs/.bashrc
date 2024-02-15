@@ -2,7 +2,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # User specific environment
@@ -17,21 +17,17 @@ export PATH
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
-	for rc in ~/.bashrc.d/*; do
-		if [ -f "$rc" ]; then
-			. "$rc"
-		fi
-	done
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
 fi
-
 unset rc
 
 # >>> xmake >>>
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 # <<< xmake <<<
-
-# Starship
-eval "$(starship init bash)"
 
 # Aliases
 alias cls=clear
@@ -46,9 +42,9 @@ alias in="sudo dnf5 install"
 alias info="sudo dnf5 info"
 alias l="ls -al"
 
-# Docker
-export PATH=/usr/bin:$PATH
-export DOCKER_HOST=unix:///run/user/1001/docker.sock
+# Starship init
+eval "$(starship init bash)"
+
 . "$HOME/.cargo/env"
 
 # Go
