@@ -3,6 +3,7 @@
 # Update
 sudo dnf -y update
 sudo dnf -y upgrade
+sudo dnf -y autoremove
 
 # Dnf packages
 input="./configs/dnf_packages.txt"
@@ -31,10 +32,3 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim $HOME/.config/nvim
 
 # Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
-
-# Clean up
-sudo dnf -y remove firefox
-sudo dnf -y group remove libreoffice
-sudo dnf -y remove libreoffice-core
-
-sudo dnf -y autoremove
