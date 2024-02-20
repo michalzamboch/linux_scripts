@@ -22,3 +22,4 @@ lshw
 tldr
 ripgrep
 xmake
+cmatrix
