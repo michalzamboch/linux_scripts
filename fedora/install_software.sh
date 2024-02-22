@@ -1,18 +1,13 @@
 #!/bin/bash
 
-# Dnf packages
+# Update
 sudo dnf -y update
+sudo dnf -y upgrade
+sudo dnf -y autoremove
+
+# Dnf packages
 input="./configs/dnf_packages.txt"
-
-while IFS= read -r line
-do
-  echo "$line"
-  sudo dnf -y install $line
-done < "$input"
-
-# Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env"
+sudo dnf -y install $(cat $input)
 
 # VS Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -26,10 +21,14 @@ sudo dnf -y config-manager --add-repo https://brave-browser-rpm-release.s3.brave
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf -y install brave-browser
 
-# Astro vim
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
+# Qt
+sudo dnf install -y 'qt5*' 'qtcreator*'
+sudo dnf install -y 'qt5*'-devel
+sudo dnf install -y mesa-libGL mesa-libGL-devel
+sudo dnf install -y qt6-qtbase-devel qt6-qtbase-private-devel qt6-qtdeclarative-devel qt6-qt5compat-devel qt6-qtdeclarative-static
 
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+# Astro vim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim $HOME/.config/nvim
+
+# Starship
+curl -sS https://starship.rs/install.sh | sh -s -- -y

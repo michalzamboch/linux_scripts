@@ -1,8 +1,8 @@
 neovim
-vlc
 steam
 neofetch
 git
+gparted
 htop
 nodejs
 lua
@@ -13,3 +13,13 @@ bleachbit
 golang
 ufw
 arm-image-installer
+lolcat
+dnf5
+gamemode
+fzf
+moreutils
+lshw
+tldr
+ripgrep
+xmake
+cmatrix
