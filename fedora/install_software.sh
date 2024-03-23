@@ -29,6 +29,3 @@ sudo dnf install -y qt6-qtbase-devel qt6-qtbase-private-devel qt6-qtdeclarative-
 
 # Astro vim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim $HOME/.config/nvim
-
-# Starship
-curl -sS https://starship.rs/install.sh | sh -s -- -y

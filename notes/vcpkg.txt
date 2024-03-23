@@ -1,0 +1,18 @@
+Using vcpkg with CMake: To use vcpkg with CMake, you need to specify the vcpkg toolchain file. This can be done by setting the CMAKE_TOOLCHAIN_FILE variable when invoking CMake. For example:
+
+cmake -B [build directory] -S . "-DCMAKE_TOOLCHAIN_FILE=[path to vcpkg]/scripts/buildsystems/vcpkg.cmake"
+cmake --build [build directory]
+
+Replace [build directory] with your desired build directory and [path to vcpkg] with the actual path to your vcpkg installation.
+
+
+
+Integration with IDEs: For Visual Studio Code with CMake Tools, you can add the following to your workspace settings.json:
+
+{
+  "cmake.configureSettings": {
+    "CMAKE_TOOLCHAIN_FILE": "[vcpkg root]/scripts/buildsystems/vcpkg.cmake"
+  }
+}
+
+Replace [vcpkg root] with the path to your vcpkg installation.
