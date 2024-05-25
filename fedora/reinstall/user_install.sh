@@ -15,9 +15,6 @@ cd ../../common/
 # Install font
 sh ./font.sh
 
-# Starship
-sh ./install_starship.sh
-
 # Install flatpak packages
 sh ./install_flatpaks.sh
 
