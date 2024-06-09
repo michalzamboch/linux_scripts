@@ -12,4 +12,6 @@ alias in="sudo dnf5 install"
 alias info="sudo dnf5 info"
 alias l="ls -al"
 alias ff="fastfetch"
+alias pbcopy="xsel --input --clipboard"
+alias pbpaste="xsel --output --clipboard"
 
