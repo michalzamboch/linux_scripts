@@ -36,9 +36,6 @@ popd
 pushd .
 cd ../../common/
 
-# Starship
-sh ./install_starship.sh
-
 # Time system fix
 sh ./dualboot_time_fix.sh
 
