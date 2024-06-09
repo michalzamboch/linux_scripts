@@ -1,6 +1,6 @@
 #!/bin/bash
 
-clear-buffer()
+clearb()
 {
   # discard rest of input before exiting
   while read -t 0 notused; do
@@ -17,10 +17,10 @@ echo
 start_time=$SECONDS
 
 sudo sh ./su_install.sh
-clear-buffer
+clearb
 
 sh ./user_install.sh
-clear-buffer
+clearb
 
 elapsed=$(( SECONDS - start_time ))
 
