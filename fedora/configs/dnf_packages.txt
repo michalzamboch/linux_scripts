@@ -34,3 +34,4 @@ libxcb-devel
 gtk3-devel
 atk
 fontconfig-devel
+xkill
